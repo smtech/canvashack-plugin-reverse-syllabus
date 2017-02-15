@@ -1,0 +1,14 @@
+{
+    "name": "canvashack/plugin-reverse-syllabus",
+    "description": "Flip syllabi in some classes to be in reverse chronological order.",
+    "type": "canvashack-plugin",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Seth Battis",
+            "email": "sethbattis@stmarksschool.org"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

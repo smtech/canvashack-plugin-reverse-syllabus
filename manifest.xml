@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<canvashack>
+	<name>Reverse Syllabus</name>
+	<id>reverse-syllabus</id>
+	<abstract>Flip syllabi in some classes to be in reverse chronological order.</abstract>
+	<authors>
+		<author>
+			<name>Seth Battis</name>
+			<email>SethBattis@stmarksschool.org</email>
+		</author>
+	</authors>
+	<components>
+		<javascript>reverse-syllabus.js</javascript>
+		<canvas>
+			<pages>
+				<include>
+					<page>
+						<type>regex</type>
+						<pattern>%courses/(4608|3532|4324)/assignments/syllabus[^/]*$%</pattern>
+					</page>
+				</include>
+			</pages>
+			<dom>
+				<bundle>
+					<event>ready</event>
+					<action>checkRows()</action>
+					<selector>body</selector>
+				</bundle>
+			</dom>
+		</canvas>
+	</components>
+</canvashack>
