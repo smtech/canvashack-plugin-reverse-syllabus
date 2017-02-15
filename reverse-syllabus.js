@@ -1,8 +1,7 @@
 var canvashack = {
     checkRows: function() {
-        console.log('checking for rows');
         if ($('tr.date').length <= 1) {
-            window.setTimeOut(checkRows, 10);
+            window.setTimeout(this.checkRows, 10);
         } else {
             this.reverseSyllabus();
         }
